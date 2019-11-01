@@ -11,6 +11,9 @@ module.exports.init = (config) => {
         SequenceNumber,
       }
     }) => {
+      if (!NewImage)
+        return 
+        
       const obj = AWS.DynamoDB.Converter.unmarshall(NewImage)
       // dynamodbs have a bunch of zeros in the middle which make the number too large for stitch
       const sequence = SequenceNumber.replace('0000000', '')
