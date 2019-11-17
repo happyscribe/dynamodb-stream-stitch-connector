@@ -1,6 +1,6 @@
 {
   "name": "dynamodb-stream-stitch-connector",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A utility to push dynamodb streams to Stitch. Runs on AWS Lambda.",
   "main": "src/index.js",
   "scripts": {
